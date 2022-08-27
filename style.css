@@ -1,0 +1,844 @@
+@font-face {
+  font-family: "Regular";
+  src: url("Font/QuicksandBold-Regular.otf") format("woff");
+}
+
+@font-face {
+  font-family: "Book-regular";
+  src: url("Font/Quicksand_Book.otf") format("woff");
+}
+
+body {
+  margin: 0;
+  font-family: "Regular";
+  line-height: 1.6;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.page {
+  width: 100%;
+  height: 100vh;
+}
+
+/*Header
+=============*/
+
+.header {
+  width: 100%;
+  height: 790px;
+
+  background: #fff url(img/Livello-1.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.layer {
+  width: 100%;
+  height: 790px;
+  padding: 40px 0 0 0;
+
+  background-color: rgba(43, 43, 43, 0.5);
+}
+
+.head {
+  max-width: 1242px;
+  height: 40px;
+  margin: auto;
+  padding: 20px 40px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+/*nav*/
+
+
+
+.home,
+.products {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+.home:hover,
+.products:hover {
+  color: rgb(124, 124, 219);
+  transition: color 0.3s linear;
+}
+
+.products {
+  margin: 0 50px;
+}
+
+/*Conect*/
+
+.conect {
+  max-width: 810px;
+  margin: 210px auto 0;
+}
+
+.about,
+.about-title {
+  text-align: center;
+}
+
+.about-title {
+  font-size: 60px;
+  color: #fff;
+}
+
+.about {
+  font-family: "Book-regular";
+  font-size: 20px;
+  font-weight: 400;
+
+  color: #fff;
+}
+
+.slash {
+  margin-top: 250px;
+  text-align: center;
+  animation-duration: 5s;
+}
+
+/*Main
+==============*/
+
+.main {
+  width: 100%;
+  height: 1450px;
+
+  background: #fff;
+}
+
+.choose {
+  width: 100%;
+  height: 145px;
+  padding: 0 95px;
+
+  background-color: #f5f6f7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.option {
+  display: inline-block;
+  margin-right: 45px;
+}
+
+.option:first-child {
+  margin-left: 0;
+}
+
+.choose-title label {
+  color: #333333;
+  font-size: 18px;
+}
+
+.botton a {
+  padding: 14px 35px;
+
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+
+  border-radius: 3px;
+  background-color: #aa9b77;
+}
+
+.botton a:hover {
+  background-color: #807251;
+  transition: background-color 0.3s linear;
+}
+
+/*chapter-men*/
+
+.chapter-men {
+  width: 100%;
+  height: 200px;
+  padding: 100px 95px 0;
+
+  position: relative;
+}
+
+.man {
+  width: 80px;
+  height: 26px;
+
+  background-color: #fff;
+  position: absolute;
+  top: 85px;
+  left: 95px;
+}
+
+.man p {
+  font-size: 20px;
+}
+
+.line-men{
+  width: 100%;
+  height: 2px;
+  padding-left: 100px;
+
+  background-color:#ccc;
+}
+
+.namber {
+  width: 50px;
+  height: 50px;
+
+  color: #aa9b77;
+  position: absolute;
+  bottom: 5px;
+  right: 80px;
+}
+
+.direction a {
+  margin-right: 10px;
+}
+
+/*THINGS
+=============*/
+
+.thing {
+  width: 100%;
+  padding: 0 95px;
+
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/*first*/
+
+.product {
+  width: 310px;
+  min-height: 370px;
+
+  outline: 5px solid #aa9b77;
+  outline-offset: -5px;
+
+  background-color: #f5f6f7;
+  position: relative;
+}
+
+.up-line {
+  margin-top: 25px;
+  margin-left: 25px;
+
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.up-line span {
+  margin-right: 10px;
+}
+.size{
+  width: 60px;
+  height: 26px;
+}
+
+.circles {
+  position: absolute;
+  top: 27px;
+  right: 27px;
+}
+.circles a {
+  margin-left: 5px;
+}
+
+.t-shirt {
+  position: absolute;
+  top: 85px;
+  right: 90px;
+}
+
+.down-line {
+  margin-top: 265px;
+}
+.down-shirt{
+  margin-left: 25px;
+}
+.name-thing {
+  font-size: 18px;
+  color: #aa9b77;
+}
+
+.cost {
+  font-size: 22px;
+  margin-left: 115px;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+/*SECOND*/
+
+.pants {
+  position: absolute;
+  top: 60px;
+  right: 80px;
+}
+
+.name-pants {
+  font-size: 18px;
+  color: #aa9b77;
+}
+
+.cost-pants {
+  font-size: 22px;
+}
+
+/*third*/
+
+.cost-backpack {
+  font-size: 22px;
+  margin-left: 50px;
+}
+.name-pants{
+  margin-left: 20px;
+}
+
+/*CHAPTER-WOMEN*/
+
+.chapter-women {
+ width: 100%;
+ height: 200px;
+ padding: 100px 95px;
+
+ position: relative;
+}
+
+.women {
+  width: 120px;
+  height: 26px;
+  padding-left: 30px;
+  
+
+  background-color: #fff;
+
+  position: absolute;
+  top: 85px;
+  right: 85px;
+}
+
+.women p{
+  font-size: 20px;
+}
+
+.line-women{
+  width: 100%;
+  height: 2px;
+
+  background-color:#ccc;
+}
+
+.namber-women {
+  width: 50px;
+  height: 50px;
+
+  color: #aa9b77;
+  position: absolute;
+  bottom: 10px;
+  left: 100px;
+}
+
+/*Fifth*/
+
+.cost-giacket {
+  font-size: 22px;
+  margin-left: 50px;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.giacket {
+  position: absolute;
+  top: 70px;
+  right: 60px;
+}
+
+/*fifth*/
+
+.trekking {
+  position: absolute;
+  top: 90px;
+  right: 60px;
+}
+
+.cost-trekking {
+  font-size: 22px;
+  margin-right: 0;
+  padding-right: 0;
+}
+.name-pants{
+  margin-right: 30px;
+}
+
+/*FOOTER*/
+
+.foot-up {
+  margin-top: 135px;
+  width: 100%;
+  height: 400px;
+  padding-top: 75px;
+
+  background-color: #aa9b77;
+}
+
+.bord {
+  max-width: 710px;
+  height: 250px;
+  margin: auto auto;
+  padding: 80px;
+
+  border: 2px solid #918363;
+  position: relative;
+}
+
+.about-us {
+  width: 110px;
+  height: 25px;
+  padding: 0;
+
+  font-family: "Regular";
+  font-weight: bold;
+  color: #837659;
+  font-size: 20px;
+
+  background-color: #aa9b77;
+  position: absolute;
+  top: -17px;
+  left: 285px;
+}
+
+.sque-text {
+  text-align: center;
+  color: #424242;
+}
+
+/*middle*/
+
+.foot-midle {
+  width: 100%;
+  height: 70px;
+  padding: 25px 0 0 65px;
+
+  background-color: #535253;
+}
+
+.middle-text {
+  width: 360px;
+  height: 20px;
+  padding-left: 55px;
+
+  font-size: 16px;
+  color: #fff;
+
+  position: relative;
+}
+
+.middle-img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*down*/
+
+.foot-down {
+  width: 100%;
+  height: 355px;
+  padding: 120px 55px 0 55px;
+
+  background-color: #424242;
+  display: flex;
+  justify-content: space-between;
+}
+.down-left {
+  max-width: 295px;
+
+  color: #fff;
+  background-color: #424242;
+}
+
+.down-left p {
+  font-size: 10px;
+  line-height: 20px;
+}
+
+.down-right {
+  width: 275px;
+  height: 50px;
+  margin-top: 25px;
+}
+.nav-down {
+  margin: 0;
+  text-align: end;
+}
+
+.nav-down a {
+  margin: 3px;
+
+  font-size: 14px;
+  color: #fff;
+
+  text-decoration: none;
+}
+
+.nav-down a:hover {
+  color: rgb(141, 136, 136);
+  text-decoration: underline;
+}
+
+.nav-down p {
+  font-size: 18px;
+  color: #fff;
+}
+
+.nav-down span {
+  margin-right: 3px;
+
+  font-family: "Book-regular";
+  font-size: 12px;
+  color: #fff;
+}
+
+
+/*MEDIA
+=============*/
+
+@media (max-width:1150px) {
+  .thing{
+    flex-basis: 100%;
+  }
+ .product{
+   margin-top: 10px;
+ }
+ .foot-up{
+   margin-top: 800px;
+ }
+}
+
+
+@media (max-width:830px){
+  .foot-up{
+    margin-top: 1450px;
+  }
+  .choose{
+    flex-basis: 100%;
+    justify-content: center;
+  } 
+  .about-us{
+    left: 15px;
+  }
+  .slash{
+    margin: 150px;
+  }
+}
+
+
+@media (max-width:725px){
+.foot-up{
+  padding: 75px 25px 0;
+}
+}
+
+
+@media (max-width:650px){
+    .head-shoes{
+      width: 25px;
+      height: 25px;
+    }
+    .home,
+    .products{
+      font-size: 15px;
+    }
+    .basket{
+      width: 15px;
+      height: 15px;
+    }
+    .products{
+      margin: 25px;
+    }
+    .about-title{
+      font-size: 30px;
+    }
+    .about{
+      font-size: 15px;
+    }
+    .bord{
+      height: 280px;
+    }
+    .slash{
+      margin-top: 300px;
+    }
+}
+
+
+@media (max-width:550px){
+  .foot-down{
+    padding: 60px 20px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .down-right{
+    order: 1;
+  }
+  .down-left{
+    order: 2;
+  }
+  .bord{
+    height: 300px;
+  }
+.choose{
+  height: 190px;
+  flex-direction: column;
+}
+.choose-title{
+  margin-bottom: 20px;
+}
+.option{
+  display: block;
+  margin-bottom: 5px;
+}
+.option:first-child{
+margin: 0;
+margin-bottom: 5px;
+}
+.foot-up{
+  margin-top: 1500px;
+}
+.cost-backpack{
+  margin: 0;
+  text-align: center;
+}
+.name-pants{
+  margin: 0;
+}
+}
+
+
+@media (max-width:510px){
+  .foot-up{
+    margin-top: 1800px;
+  }
+  .down-line{
+    display: flex;
+    flex-direction: column;
+  }
+  .down-line span{
+    text-align: center;
+  }
+  .cost{
+    margin: 0;
+  }
+  .up-line{
+    display: flex;
+    flex-direction: column;
+  }
+  .img-all{
+    max-width: 200px;
+    height: 150px;
+    margin: 50px 0 0 50px;
+    margin-left: 50px;
+  }
+  .t-shirt{
+    top: 50px;
+    right: 50px;
+  }
+  .img-trekking{
+    max-width: 150px;
+    height: 100px;
+  }
+  .bord{
+    padding-top: 40px;
+  }
+ .foot-midle{
+padding-right: 20px;
+ }
+ .middle-text{
+   padding-left: 35px;
+ }
+ .cost-giacket{
+   margin: 0;
+ }
+ .page{
+  overflow-x: hidden;
+ }
+}
+
+
+@media (max-width:425px){
+  .middle-text{
+    font-size: 10px;
+    padding-left: 35px;
+  }
+  .foot-midle{
+    padding-left: 40px;
+  }
+  .foot-up{
+    margin-top: 1600px;
+  }
+  .bord{
+    padding: 40px;
+  }
+  .nav-down a,
+  .nav-down p{
+    font-size: 10px;
+  }
+  .t-shirt{
+    left: -25px;
+  }
+  .circles{
+    left: 10px;
+    top: 8px;
+  }
+  .pants{
+    left: -22px;
+  }
+  .giacket{
+    left: -45px;
+  }
+  .trekking{
+    left: -27px;
+  }
+  .botton a{
+    font-size: 9px;
+    padding: 5px 6px;
+  }
+  .option{
+    margin: 0;
+  }
+  .option label{
+    font-size: 8px;
+  }
+}
+@media (max-width: 340px){
+.circles img{
+  width: 10px;
+  height: 10px;
+}
+.size{
+  margin-top: 10px;
+  font-size: 10px;
+}
+.size img{
+  width: 8px;
+  height: 5px;
+}
+.t-shirt{
+  left: -40px;
+}
+.t-shirt img{
+  width: 63px;
+  height: 94px;
+}
+.women p{
+  font-size: 15px;
+}
+.man p{
+  font-size: 15px;
+}
+.name-thing{
+  font-size: 12px;
+}
+.cost{
+  font-size: 12px;
+}
+.pants img{
+  width: 48px;
+  height: 110px;
+  margin: 45px;
+}
+.name-pants{
+  font-size: 12px;
+}
+.cost-pants{
+  font-size: 12px;
+}
+.down-line{
+  margin-top: 240px;
+}
+.up-line{
+  font-size: 12px;
+  margin-left: 8px;
+}
+.down-line{
+  margin-left: -5px;
+}
+.cost-backpack{
+  font-size: 12px;
+}
+.giacket img{
+  width: 72px;
+  height: 116px;
+  margin-left: 55px;
+}
+.cost-giacket{
+  font-size: 12px;
+}
+.cost-trekking{
+  font-size: 12px;
+}
+.trekking img{
+  width: 63px;
+  height: 67px;
+  left: -37px;
+}
+.sque-text p{
+  font-size: 12px;
+}
+.about-us p{
+  font-size: 15px;
+}
+.middle-text p{
+  font-size: 8px;
+}
+.down-left p{
+  font-size: 8px;
+}
+.nav-down{
+  text-align: left;
+}
+.nav-down a{
+  font-size: 8px;
+}
+}
+@media (max-width: 330px){
+  .slash{
+    margin: 265px auto 0;
+  }
+}
+@media (max-width: 300px){
+  .head{
+    text-align: center;
+  }
+.products{
+  margin: 0 10px 0 0;
+}
+.home{
+  margin-right: 10px;
+}
+}
