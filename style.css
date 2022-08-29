@@ -118,6 +118,9 @@ p {
   text-align: center;
   animation-duration: 5s;
 }
+.slash-img:hover{
+  cursor: pointer;
+}
 
 /*Main
 ==============*/
